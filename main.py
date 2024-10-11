@@ -24,8 +24,8 @@ logging.basicConfig(
 )
 API_ID = int(getenv("API_ID", "4110592"))
 API_HASH = getenv("API_HASH", "aa7c849566922168031b95212860ede0")
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-OWNER_ID = getenv("OWNER_ID", None)
+BOT_TOKEN = getenv("BOT_TOKEN", 7239995857:AAGwKp4kbR0Ot8PvXHYdou6Mgs6IG45BOq8)
+OWNER_ID = getenv("OWNER_ID", 6748827895)
 OP  = [int(g), int(gg), int(OWNER_ID)]
 #TelegramClient..
 sree = TelegramClient(
@@ -34,11 +34,11 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "https://t.me/ALONE_WAS_BOT"
+Owner = "https://t.me/UncountableAura"
 repo = "https://github.com/TeamAloneOp/AloneXBanallBot/fork"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/AlonesHeaven"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/An"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
